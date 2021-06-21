@@ -1,8 +1,5 @@
 const { babel } = require('@rollup/plugin-babel');
 import scss from 'rollup-plugin-scss'
-import sass from 'rollup-plugin-sass'
-import autoprefixer from 'autoprefixer'
-import postcss from 'postcss'
 
 module.exports = {
   input: 'src/js/main.js',
@@ -15,7 +12,8 @@ module.exports = {
       babelHelpers: 'bundled',
     }),
     scss({
-      output: "build/css/iux.css",
+      output: 'build/css/iux.css',
+      outputStyle: 'compressed',
       failOnError: true,
     }),
   ],
