@@ -1,0 +1,22 @@
+{
+  "name": "@iugu/iux-js",
+  "version": "0.0.1",
+  "description": "iugu IUX js",
+  "homepage": "",
+  "author": "iugu",
+  "license": "MIT",
+  "main": "build/js/iux.min.js",
+  "repository": "",
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "iux"
+  ],
+  "scripts": {
+    "dist": ""
+  },
+  "devDependencies": {
+    "rollup": "^2.52.1"
+  }
+}
