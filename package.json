@@ -1,10 +1,11 @@
 {
   "name": "@iugu/iux-js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "iugu IUX js",
   "homepage": "",
   "author": "iugu",
   "license": "MIT",
+  "style": "build/css/iux.css",
   "main": "build/js/iux.min.js",
   "repository": "",
   "bugs": {
@@ -20,7 +21,11 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-env": "^7.14.5",
     "@rollup/plugin-babel": "^5.3.0",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
     "rollup": "^2.52.1",
-    "rollup-plugin-babel": "^4.4.0"
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-scss": "^2.6.1"
   }
 }
