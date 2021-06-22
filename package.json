@@ -1,6 +1,6 @@
 {
   "name": "@iugu/iux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "iUX - Javascript and Stylesheets",
   "homepage": "",
   "author": "iugu",
@@ -21,8 +21,14 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-env": "^7.14.5",
     "@rollup/plugin-babel": "^5.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
     "rollup": "^2.52.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-scss": "^2.6.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }
