@@ -1,6 +1,6 @@
 {
   "name": "@iugu/iux",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "iUX - Javascript and Stylesheets",
   "author": "iugu",
   "license": "MIT",
@@ -12,9 +12,8 @@
     "build:all": "yarn build:js && yarn build:sass",
     "update:patch": "npm version patch",
     "update:minor": "npm version minor",
-    "update:major": "npm version major" 
+    "update:major": "npm version major"
   },
-  
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
