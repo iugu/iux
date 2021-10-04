@@ -6,7 +6,11 @@
   "license": "MIT",
   "style": "build/css/iux.css",
   "main": "build/js/iux.min.js",
-  "scripts": {},
+  "scripts": {
+    "build:sass": "gulp compile-sass",
+    "build:js": "gulp compile-js",
+    "build:all": "gulp compile-js && gulp compile-sass"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
