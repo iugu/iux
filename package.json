@@ -13,7 +13,7 @@
     "update:patch": "npm version patch",
     "update:minor": "npm version minor",
     "update:major": "npm version major",
-    "deploy:patch": "yarn build:all && yarn update:patch && npm publish --access public",
+    "deploy:patch": "npm publish --access public",
     "deploy:minor": "yarn build:all && yarn update:minor && npm publish --access public",
     "deploy:major": "yarn build:all && yarn update:major && npm publish --access public"
   },
