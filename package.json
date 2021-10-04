@@ -9,9 +9,12 @@
   "scripts": {
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
-    "build:all": "gulp compile-js && gulp compile-sass",
-    "deploy:patch": "gulp compile-js && gulp compile-sass && git add . && git commit -am 'Patch update' && npm version patch"
+    "build:all": "yarn build:js && yarn build:sass",
+    "update:patch": "npm version patch",
+    "update:minor": "npm version minor",
+    "update:major": "npm version major" 
   },
+  
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
