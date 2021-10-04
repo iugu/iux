@@ -15,7 +15,8 @@
     "update:major": "npm version major",
     "deploy:patch": "npm publish --access public",
     "deploy:minor": "yarn build:all && yarn update:minor && npm publish --access public",
-    "deploy:major": "yarn build:all && yarn update:major && npm publish --access public"
+    "deploy:major": "yarn build:all && yarn update:major && npm publish --access public",
+    "test": ""
   },
   "devDependencies": {
     "gulp": "^4.0.2",
