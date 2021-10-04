@@ -9,7 +9,9 @@
   "scripts": {
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
-    "build:all": "gulp compile-js && gulp compile-sass"
+    "build:all": "gulp compile-js && gulp compile-sass",
+    "deploy:patch": "npm version patch"
+
   },
   "devDependencies": {
     "gulp": "^4.0.2",
