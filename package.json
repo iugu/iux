@@ -10,7 +10,7 @@
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
     "build:all": "gulp compile-js && gulp compile-sass",
-    "deploy:patch": "npm version patch"
+    "deploy:patch": "gulp compile-js && gulp compile-sass && git add . && git commit -am 'Patch update' && npm version patch"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
