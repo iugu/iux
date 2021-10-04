@@ -10,9 +10,9 @@
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
     "build:all": "yarn build:js && yarn build:sass",
-    "update:patch": "npm version patch",
-    "update:minor": "npm version minor",
-    "update:major": "npm version major"
+    "update:patch": "npm version patch && git add . && git commit -am 'Update package patch version'",
+    "update:minor": "npm version minor && git add . && git commit -am 'Update package minor version'",
+    "update:major": "npm version major && git add . && git commit -am 'Update package major version'"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
