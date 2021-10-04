@@ -9,14 +9,7 @@
   "scripts": {
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
-    "build:all": "yarn build:js && yarn build:sass",
-    "update:patch": "npm version patch",
-    "update:minor": "npm version minor",
-    "update:major": "npm version major",
-    "deploy:patch": "npm publish --access public",
-    "deploy:minor": "yarn build:all && yarn update:minor && npm publish --access public",
-    "deploy:major": "yarn build:all && yarn update:major && npm publish --access public",
-    "test": ""
+    "build:all": "yarn build:js && yarn build:sass"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
