@@ -1,13 +1,12 @@
 {
   "name": "@iugu/iux",
-  "version": "0.0.33",
+  "version": "0.1.0",
   "description": "iUX - Javascript and Stylesheets",
   "author": "iugu",
   "license": "MIT",
   "style": "build/css/iux.css",
   "main": "build/js/iux.min.js",
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
