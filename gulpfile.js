@@ -25,6 +25,7 @@ const jsFiles = [
 function compileJs() {
   return gulp.src(jsFiles)
   .pipe(concat('iux.min.js'))
+  .pipe(uglify())
   .pipe(gulp.dest(jsDest));
 }
 
