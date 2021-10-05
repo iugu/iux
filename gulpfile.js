@@ -14,7 +14,10 @@ const jsFiles = [
                './src/js/libs/jquery-3.6.0.js',
                './src/js/libs/moment.min.js',
                './src/js/libs/moment.pt-br.min.js',
+               './src/js/libs/moment.min.js',
                './src/js/libs/daterangepicker.min.js',
+               './src/js/libs/datepicker.min.js',
+               './src/js/datepicker.js',
                './src/js/filters.js',
               ],
     jsDest = 'build/js';
