@@ -10,7 +10,7 @@
     "build:sass": "gulp compile-sass",
     "build:js": "gulp compile-js",
     "build:all": "yarn build:js && yarn build:sass",
-    "test": ""
+    "test": "scripts/test"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
