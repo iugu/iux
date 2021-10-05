@@ -20,3 +20,16 @@ div[role=panel-header]{
     margin: 0 $spacing-3 0 0;
   }
 }
+
+div[role=page-header] {
+  margin-top: 6px !important;
+}
+
+
+div[role=page-header] a {
+    margin-left: 6px !important;
+}
+
+div[role=page-header] h5 {
+  margin: 8px 0 1.15em 0 !important;
+}

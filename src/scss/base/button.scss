@@ -17,11 +17,15 @@ a[role=button] {
   text-decoration: none;
   height: 2.55em !important;
   line-height: 2.3em !important;
+  background-color: $iugu-base;;
+  color: #FFF;
+  border: 2px solid transparent;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.2);
   &.default {
     background-color: $iugu-base;
     color: #FFF;
     border: 2px solid transparent;
-    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.2);
     &:hover {
       background-color: $iugu-base-dark; 
       border-color: $iugu-base-dark;
