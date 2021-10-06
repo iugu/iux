@@ -219,7 +219,7 @@
 
 .datepicker-cell.selected, .datepicker-cell.selected:hover {
   background-color: $iugu-base;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
 }
 
