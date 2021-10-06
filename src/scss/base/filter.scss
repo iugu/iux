@@ -15,7 +15,7 @@
 .filter-container {
   border-top: 1px solid #e5e5e5;
   padding: 14px;
-  &[role=button].mini {
+  [role=button].mini {
     float: right;
     font-size: 0.70em !important;
     margin: 0 0 12px 0;
