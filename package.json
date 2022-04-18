@@ -37,7 +37,9 @@
   "dependencies": {
     "@storybook/builder-webpack5": "^6.4.22",
     "@storybook/manager-webpack5": "^6.4.22",
+    "modern-css-reset": "^1.4.0",
     "sass": "^1.50.0",
+    "styled-components": "^5.3.5",
     "webpack": "^5.72.0"
   }
 }

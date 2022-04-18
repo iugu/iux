@@ -1,4 +1,6 @@
 import styles from '../src/css/index.scss';
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import iux from './iux';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,17 +11,7 @@ export const parameters = {
     },
   },
   backgrounds: {
-    default: 'Claro',
-    values: [
-      {
-        name: 'Claro',
-        value: '#F3F5F7',
-      },
-      {
-        name: 'Escuro',
-        value: '#2C3636',
-      },
-    ],
+    disable: true,
     grid: {
       cellSize: 20,
       opacity: 0.2,
@@ -32,5 +24,8 @@ export const parameters = {
     storySort: {
       order: ['Visão Geral', 'Base'],
     },
+  },
+  docs: {
+    theme: iux,
   },
 }

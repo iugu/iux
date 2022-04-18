@@ -5,6 +5,54 @@ export const fontSizes = ['l3', 'l2', 'l1', 'm3', 'm2', 'm1', 's3', 's2', 's1'].
   (size) => `${typography.size[size]}px`
 );
 
+/*
+export const typography = {
+  fonts: {
+    base: [
+      '"Nunito Sans"',
+      '-apple-system',
+      '".SFNSText-Regular"',
+      '"San Francisco"',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      '"Helvetica Neue"',
+      'Helvetica',
+      'Arial',
+      'sans-serif',
+    ].join(', '),
+    mono: [
+      'ui-monospace',
+      'Menlo',
+      'Monaco',
+      '"Roboto Mono"',
+      '"Oxygen Mono"',
+      '"Ubuntu Monospace"',
+      '"Source Code Pro"',
+      '"Droid Sans Mono"',
+      '"Courier New"',
+      'monospace',
+    ].join(', '),
+  },
+  weight: {
+    regular: 400,
+    bold: 700,
+    black: 900,
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 28,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+    code: 90,
+  },
+};
+*/
+
 export default create({
   base: 'light',
 
@@ -19,7 +67,7 @@ export default create({
 
   // Typography
   fontBase: '"Museo Sans", museo-sans',
-  fontCode: 'monospace',
+  // fontCode: 'monospace',
 
   // Text colors
   textColor: '#657373',
