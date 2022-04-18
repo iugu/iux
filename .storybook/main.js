@@ -12,7 +12,16 @@ module.exports = {
     "@storybook/preset-scss",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@whitespace/storybook-addon-html"
+    "@whitespace/storybook-addon-html",
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
+    }
   ],
   "features": {
     postcss: false,
@@ -27,7 +36,19 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
-    config.module.rules.push(
+    config.module.rules.push({
+          test: path.join(__dirname, '.'),
+          exclude: /(node_modules)/,
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-react',
+              {
+                'plugins': ['@babel/plugin-syntax-jsx']
+              }
+            ]
+          }
+      }
     );
 
     // Return the altered config

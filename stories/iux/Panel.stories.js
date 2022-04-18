@@ -1,3 +1,5 @@
+import '../global.scss';
+
 export default {
   title: 'IUX/Painel',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes

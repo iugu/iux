@@ -1,15 +1,7 @@
+@import 'modern-css-reset/dist/reset.css';
 @import "./core/sizing";
 @import "./core/colors";
 @import "./core/typography";
-@import "./core/layout.scss";
+@import "./core/layout";
 @import "./components/panel";
-@import "./core/preview.scss";
-
-.iux {
-  @import "./core/sizing";
-  @import "./core/colors";
-  @import "./core/typography";
-  @import "./core/layout.scss";
-  @import "./components/panel";
-  @import "./core/preview.scss";
-}
+@import "./core/preview";
