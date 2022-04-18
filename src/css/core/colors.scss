@@ -1,0 +1,116 @@
+// Text related
+$text_base: #657373;
+$text_darker: #1A1A1B;
+
+// Colors
+$neutral_black: #000000;
+$neutral_white: #FFFFFF;
+
+$neutral_light_1: #989898;
+$neutral_light_2: #B3B3B3;
+$neutral_light_3: #CBCBCA;
+$neutral_light_4: #E5E5E5;
+$neutral_light_5: #F3F3F3;
+
+$neutral_gray_1: #2C3636;
+$neutral_gray_2: #555F5F;
+$neutral_gray_3: #96A8A8;
+$neutral_gray_4: #C0CCCD;
+$neutral_gray_5: #D6DEDE;
+
+$neutral_dark_1: #1A1A1B;
+$neutral_dark_2: #343734;
+$neutral_dark_3: #4E4E4E;
+$neutral_dark_4: #676767;
+$neutral_dark_5: #7F7F80;
+
+$base: #5274FF;
+$base_dark: #3B5DE8;
+$base_light: #6B88FF;
+
+// Decoration related
+$bg_blue_50: #F3F5F7;
+$bg_blue_200: #E0F1F5;
+$background_base: $bg_blue_50;
+$decoration_lighter: #E5E5E5;
+
+// Action Colors
+$action_success: #009E56;
+$action_danger: #F15A22;
+$action_warning: #F89621;
+$action_default: #00AACE;
+$action_generic: #96A8A8;
+$action_info: #4882C3;
+
+// Colors
+$color_coral: #F37873;
+$color_flame: #F15A22;
+$color_red: #DE4330;
+$color_ruby: #A81F4B;
+$color_violet: #C9327E;
+$color_purple: #7E3594;
+$color_steelblue: #4882C3;
+$color_royalblue: #3D5BA9;
+$color_deepblue: #01AACE;
+$color_turquoise: #68C8C6;
+$color_vividgreen: #C7DA35;
+$color_green: #60B146;
+$color_forestgreen: #009E56;
+$color_yellow: #F5EB1B;
+$color_orange: #F89621;
+$color_brown: #7A5647;
+
+.bg_neutral_black { background-color: $neutral_black }
+.bg_neutral_white { background-color: $neutral_white }
+
+.bg_base { background-color: $base }
+.bg_base_dark { background-color: $base_dark }
+.bg_base_light { background-color: $base_light }
+
+.bg_blue_200 { background-color: $bg_blue_200 }
+.bg_blue_50 { background-color: $bg_blue_50 }
+
+.bg_text_base { background-color: $text_base }
+.bg_text_darker { background-color: $text_darker }
+
+.bg_action_success { background-color: $action_success }
+.bg_action_danger { background-color: $action_danger }
+.bg_action_warning { background-color: $action_warning }
+.bg_action_default { background-color: $action_default }
+.bg_action_generic { background-color: $action_generic }
+.bg_action_info { background-color: $action_info }
+
+.bg_color_coral { background-color: $color_coral }
+.bg_color_flame { background-color: $color_flame }
+.bg_color_red { background-color: $color_red }
+.bg_color_ruby { background-color: $color_ruby }
+.bg_color_violet { background-color: $color_violet }
+.bg_color_purple { background-color: $color_purple }
+.bg_color_steelblue { background-color: $color_steelblue }
+.bg_color_royalblue { background-color: $color_royalblue }
+.bg_color_deepblue { background-color: $color_deepblue }
+.bg_color_turquoise { background-color: $color_turquoise }
+.bg_color_vividgreen { background-color: $color_vividgreen }
+.bg_color_green { background-color: $color_green }
+.bg_color_forestgreen { background-color: $color_forestgreen }
+.bg_color_yellow { background-color: $color_yellow }
+.bg_color_orange { background-color: $color_orange }
+.bg_color_brown { background-color: $color_brown }
+
+.bg_neutral_light_1 { background-color: $neutral_light_1 }
+.bg_neutral_light_2 { background-color: $neutral_light_2 }
+.bg_neutral_light_3 { background-color: $neutral_light_3 }
+.bg_neutral_light_4 { background-color: $neutral_light_4 }
+.bg_neutral_light_5 { background-color: $neutral_light_5 }
+
+.bg_neutral_gray_1 { background-color: $neutral_gray_1 }
+.bg_neutral_gray_2 { background-color: $neutral_gray_2 }
+.bg_neutral_gray_3 { background-color: $neutral_gray_3 }
+.bg_neutral_gray_4 { background-color: $neutral_gray_4 }
+.bg_neutral_gray_5 { background-color: $neutral_gray_5 }
+
+.bg_neutral_dark_1 { background-color: $neutral_dark_1 }
+.bg_neutral_dark_2 { background-color: $neutral_dark_2 }
+.bg_neutral_dark_3 { background-color: $neutral_dark_3 }
+.bg_neutral_dark_4 { background-color: $neutral_dark_4 }
+.bg_neutral_dark_5 { background-color: $neutral_dark_5 }

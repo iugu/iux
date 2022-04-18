@@ -1,0 +1,15 @@
+@import "./core/sizing";
+@import "./core/colors";
+@import "./core/typography";
+@import "./core/layout.scss";
+@import "./components/panel";
+@import "./core/preview.scss";
+
+.iux {
+  @import "./core/sizing";
+  @import "./core/colors";
+  @import "./core/typography";
+  @import "./core/layout.scss";
+  @import "./components/panel";
+  @import "./core/preview.scss";
+}

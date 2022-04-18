@@ -1,24 +1,41 @@
 {
   "name": "@iugu/iux",
-  "version": "0.0.53",
+  "version": "0.1.0",
   "description": "iUX - Javascript and Stylesheets",
   "author": "iugu",
   "license": "MIT",
-  "style": "build/css/iux.css",
-  "main": "build/js/iux.min.js",
   "scripts": {
-    "build:sass": "gulp compile-sass",
-    "build:js": "gulp compile-js",
-    "build:all": "yarn build:js && yarn build:sass",
-    "test": "scripts/test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iugu/iux-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iugu/iux-npm/issues"
+  },
+  "homepage": "https://github.com/iugu/iux-npm#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-css-purge": "^3.0.9",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify": "^3.0.2",
-    "node-sass": "^6.0.1",
-    "sass": "^1.42.1"
+    "@babel/core": "^7.17.9",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/html": "^6.4.22",
+    "@storybook/preset-scss": "^1.0.3",
+    "@whitespace/storybook-addon-html": "^5.0.0",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "prettier": "^2.6.2",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1"
+  },
+  "dependencies": {
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "sass": "^1.50.0",
+    "webpack": "^5.72.0"
   }
 }

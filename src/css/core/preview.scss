@@ -1,0 +1,25 @@
+.sample-grid {
+  float: left;
+  width: 130px;
+  height: 170px;
+  text-align: center;
+  margin: 5px;
+  
+  p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    line-height: 18px;
+  }
+
+  .sample-rect {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.sample-screen {
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  background: $neutral_gray_4;
+}
