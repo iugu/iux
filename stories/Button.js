@@ -1,5 +1,5 @@
 import './button.css';
-import './global.css';
+import './global.scss';
 
 export const createButton = ({
   primary = false,
