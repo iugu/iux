@@ -14,8 +14,11 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@whitespace/storybook-addon-html",
+    "storybook-addon-jsx",
+    "@geometricpanda/storybook-addon-iframe",
     "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
+    "@storybook/addon-knobs",
     {
       name: '@storybook/addon-docs',
       options: {

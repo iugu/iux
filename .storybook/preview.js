@@ -2,6 +2,11 @@ import { Meta, Typeset } from '@storybook/addon-docs/blocks';
 import iux from './iux';
 import '!style-loader!css-loader!sass-loader!../src/stories/css/index.scss';
 
+const { addDecorator,addParameters } = require('@storybook/react');
+const { jsxDecorator } = require('storybook-addon-jsx');
+
+addDecorator(jsxDecorator);
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
