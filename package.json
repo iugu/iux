@@ -5,10 +5,10 @@
   "author": "iugu",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "chromatic --exit-zero-on-changes",
+    "test": "jest",
     "test-storybook": "test-storybook"
   },
   "repository": {
@@ -42,13 +42,16 @@
     "@storybook/test-runner": "^0.0.6",
     "@storybook/testing-library": "^0.0.10",
     "@storybook/testing-react": "^1.2.4",
+    "@testing-library/react": "^13.1.1",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@whitespace/storybook-addon-html": "^5.0.0",
+    "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.4",
     "chromatic": "^6.5.4",
+    "enzyme": "^3.11.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -60,6 +63,7 @@
     "mini-css-extract-plugin": "^2.6.0",
     "modern-css-reset": "^1.4.0",
     "prettier": "^2.6.2",
+    "react-test-renderer": "^18.0.0",
     "storybook-addon-jsx": "^7.3.14",
     "webpack": "^5.72.0",
     "webpack-virtual-modules": "^0.4.2"
