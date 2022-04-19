@@ -1,5 +1,6 @@
 import { create } from '@storybook/theming';
 import { typography } from '@storybook/theming';
+import iuxLogo from '../stories/assets/logo-iux.png';
 
 export const fontSizes = ['l3', 'l2', 'l1', 'm3', 'm2', 'm1', 's3', 's2', 's1'].map(
   (size) => `${typography.size[size]}px`
@@ -64,6 +65,10 @@ export default create({
   appContentBg: '#F3F5F7',
   appBorderColor: '#CBCBCA',
   appBorderRadius: 4,
+
+  brandTitle: 'iux',
+  brandUrl: '',
+  brandImage: 'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
 
   // Typography
   fontBase: '"Museo Sans", museo-sans',
