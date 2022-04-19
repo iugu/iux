@@ -1,5 +1,4 @@
-import '../../src/css/index.scss';
-import '../css/index.scss';
+import React from 'react';
 
 export default {
   title: 'Components/Panel',
@@ -22,32 +21,32 @@ const Template = ({ label, ...args }) => {
 
   var header = '';
   if (args['Header'] == true) {
-    header = `
+    header = (
       <div class="header">
         <h3 class="hat">Subtitle Hat</h3>
         <h1>Common Title</h1>
       </div>
-`;
+    );
   }
 
   var footer = '';
   if (args['Footer'] == true) {
-    footer = `
+    footer = (
       <div class="footer">
         <p class="small">Footer</p>
       </div>
-`;
+    );
   }
 
   var internal = '';
   if (args['Sub Panel'] == true) {
-    internal = `
+    internal = (
       <div class="panel">
         <div>
           <p>Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
       </div>
-`;
+    );
   }
 
   var floating = '';
@@ -61,20 +60,20 @@ const Template = ({ label, ...args }) => {
     }
   }
 
-  return `
-    <div class="iux">
-      <div class="panel ${floating}">
-        ${header}
-        <div>
-          <p>Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Donec id massa interdum, venenatis orci eu, consequat est.
-          Cras viverra viverra viverra.</p>
-          ${internal}
-        </div>
-        ${footer}
+  var classes = 'panel ' + floating
+
+  return (
+    <div className={classes}>
+      {header}
+      <div>
+        <p>Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Donec id massa interdum, venenatis orci eu, consequat est.
+        Cras viverra viverra viverra.</p>
+        {internal}
       </div>
+      {footer}
     </div>
-  `;
+  );
 };
 
 export const Default = Template.bind({});

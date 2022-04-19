@@ -1,6 +1,5 @@
 import { create } from '@storybook/theming';
 import { typography } from '@storybook/theming';
-import iuxLogo from '../stories/assets/logo-iux.png';
 
 export const fontSizes = ['l3', 'l2', 'l1', 'm3', 'm2', 'm1', 's3', 's2', 's1'].map(
   (size) => `${typography.size[size]}px`

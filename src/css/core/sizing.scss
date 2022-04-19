@@ -4,7 +4,7 @@ $default_spacing: 2px;
 $base_spacing: ($default_spacing*10);
 
 @function em($pixels, $context: $base_size) {
-  @return $pixels / $base_size * 1em;
+  @return calc($pixels / $context) * 1em;
 }
 
 *:last-child {

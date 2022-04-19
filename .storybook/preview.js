@@ -1,6 +1,6 @@
-import styles from '../src/css/index.scss';
 import { Meta, Typeset } from '@storybook/addon-docs/blocks';
 import iux from './iux';
+import '!style-loader!css-loader!sass-loader!../src/stories/css/index.scss';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
