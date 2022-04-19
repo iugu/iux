@@ -22,7 +22,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Visão Geral', 'Base'],
+      order: ['Core',['Overview', 'Colours','Layout',],'Components'],
     },
   },
   docs: {

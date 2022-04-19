@@ -1,5 +1,5 @@
 export default {
-  title: 'IUX/Button',
+  title: 'Components/Button',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
     label: { control: 'text' },

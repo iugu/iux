@@ -68,7 +68,7 @@ export default create({
 
   brandTitle: 'iux',
   brandUrl: '',
-  brandImage: iuxLogo,
+  brandImage: 'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
 
   // Typography
   fontBase: '"Museo Sans", museo-sans',

@@ -1,11 +1,11 @@
 export default {
-  title: 'IUX/Layout',
+  title: 'Core/Layout',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
   },
   parameters: {
     layout: 'centered',
-  },
+  }
 };
 
 const TemplateSimple = ({ label, ...args }) => {
@@ -15,12 +15,8 @@ const TemplateSimple = ({ label, ...args }) => {
     <div class="sample-screen">
       <div class="layout">
           <div class="layout-view no-grow">
-            <div class="panel fill-width">
-              <div>
-                <p>Parágrafo, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec id massa interdum, venenatis orci eu, consequat est.
-                Cras viverra viverra viverra.</p>
-              </div>
+            <div class="sample-filler fill-width">
+              Content
             </div>
           </div>
       </div>
@@ -36,10 +32,8 @@ const TemplateCenter = ({ label, ...args }) => {
       <div class="layout">
         <div class="layout-splitter horizontal fill-space">
           <div class="layout-view align-children-on-center">
-            <div class="panel">
-              <div>
-                Conteúdo
-              </div>
+            <div class="sample-filler">
+              Content
             </div>
           </div>
         </div>
@@ -55,18 +49,14 @@ const TemplateSidebar = ({ label, ...args }) => {
     <div class="sample-screen">
       <div class="layout">
         <div class="layout-splitter horizontal fill-space">
-          <div class="layout-view align-children-on-start" style="width:100px">
-            <div class="fill-space panel">
-              <div>
-                Barra Lateral
-              </div>
+          <div class="layout-view align-children-on-start" style="width:240px">
+            <div class="fill-space sample-filler">
+              Sidebar
             </div>
           </div>
-          <div class="layout-view align-children-on-start" style="width:calc(100% - 100px);">
-            <div class="fill-space panel">
-              <div>
-                Conteúdo
-              </div>
+          <div class="layout-view align-children-on-start" style="width:calc(100% - 240px);">
+            <div class="fill-space sample-filler">
+              Content
             </div>
           </div>
         </div>
@@ -83,26 +73,20 @@ const TemplateComplex = ({ label, ...args }) => {
       <div class="layout">
         <div class="layout-splitter vertical fill-space">
           <div class="layout-view align-children-on-start" style="height:60px">
-            <div class="fill-space panel">
-              <div>
-                Cabeçalho
-              </div>
+            <div class="fill-space sample-filler">
+              Topbar
             </div>
           </div>
           <div class="layout-view align-children-on-start" style="height:calc(100% - 60px);">
             <div class="layout-splitter horizontal fill-space">
-              <div class="layout-view align-children-on-start" style="width:100px">
-                <div class="fill-space panel">
-                  <div>
-                    Barra Lateral
-                  </div>
+              <div class="layout-view align-children-on-start" style="width:240px">
+                <div class="fill-space sample-filler">
+                  Sidebar
                 </div>
               </div>
-              <div class="layout-view align-children-on-start" style="width:calc(100% - 100px);">
-                <div class="fill-space panel">
-                  <div>
-                    Conteúdo
-                  </div>
+              <div class="layout-view align-children-on-start" style="width:calc(100% - 240px);">
+                <div class="fill-space sample-filler">
+                  Content
                 </div>
               </div>
             </div>
@@ -113,18 +97,18 @@ const TemplateComplex = ({ label, ...args }) => {
 `;
 }
 
-export const Simples = TemplateSimple.bind({});
-Simples.args = {
+export const Simple = TemplateSimple.bind({});
+Simple.args = {
 };
 
-export const Centralizado = TemplateCenter.bind({});
-Centralizado.args = {
+export const Centered = TemplateCenter.bind({});
+Centered.args = {
 };
 
-export const BarraLateral = TemplateSidebar.bind({});
-BarraLateral.args = {
+export const WithSidebar = TemplateSidebar.bind({});
+WithSidebar.args = {
 };
 
-export const Complexo = TemplateComplex.bind({});
-Complexo.args = {
+export const Complex = TemplateComplex.bind({});
+Complex.args = {
 };
