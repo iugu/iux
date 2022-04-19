@@ -4,7 +4,7 @@ export default {
   argTypes: {
   },
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   }
 };
 
@@ -112,3 +112,6 @@ WithSidebar.args = {
 export const Complex = TemplateComplex.bind({});
 Complex.args = {
 };
+
+// eslint-disable-next-line no-underscore-dangle
+export const __namedExportsOrder = ['Simple', 'Centered', 'WithSidebar', 'Complex'];
