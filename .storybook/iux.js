@@ -70,8 +70,8 @@ export default create({
   brandImage: 'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
 
   // Typography
-  fontBase: '"museo-sans", "Museo Sans"',
-  fontCode: 'monospace',
+  // fontBase: '"Museo Sans", museo-sans',
+  // fontCode: 'monospace',
 
   // Text colors
   textColor: '#657373',
