@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../../js/index.js';
 import { expect } from '@storybook/jest';
 import { within, userEvent } from '@storybook/testing-library';
+import { createTemplate } from '@storybook/react';
 
 export default {
   title: 'Components/Button',
@@ -20,5 +21,5 @@ Default.args = {
 Default.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement);
   await userEvent.click(canvas.getByRole('button'));
-  await expect(args.onClick).toHaveBeenCalled();
+  expect(args.onClick).toHaveBeenCalled();
 };

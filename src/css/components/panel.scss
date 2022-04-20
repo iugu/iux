@@ -78,3 +78,18 @@
     border-top: 1px solid $neutral_light_4;
   }
 }
+
+body,
+#root {
+  &.dark,
+  .dark {
+    .panel {
+      background: $neutral_dark_1;
+      border-color: $neutral_dark_5;
+
+      .header,.footer {
+        border-color: $neutral_light_1;
+      }
+    }
+  }
+}

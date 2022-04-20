@@ -33,5 +33,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  size: 'medium'
+  size: 'medium',
+  label: 'Button'
 };
