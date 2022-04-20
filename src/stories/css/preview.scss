@@ -33,3 +33,15 @@
 .sample-filler {
   border: 1px dashed #999;
 }
+
+#docs-root {
+  .docs-story {
+    transition: background-color 0.25s ease;
+  }
+
+  &.dark {
+    .docs-story {
+      background-color: $neutral_dark_1;
+    }
+  }
+}

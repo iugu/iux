@@ -15,10 +15,10 @@ module.exports = {
     "@storybook/addon-essentials",
     "@whitespace/storybook-addon-html",
     "storybook-addon-jsx",
-    "@geometricpanda/storybook-addon-iframe",
     "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
     "@storybook/addon-knobs",
+    "storybook-tailwind-dark-mode",
     {
       name: '@storybook/addon-docs',
       options: {
