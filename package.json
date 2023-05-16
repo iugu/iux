@@ -1,6 +1,6 @@
 {
   "name": "@iugu/iux",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "iUX - Javascript and Stylesheets",
   "author": "iugu",
   "license": "MIT",
@@ -9,16 +9,17 @@
     "build-storybook": "build-storybook",
     "chromatic": "chromatic --exit-zero-on-changes",
     "test": "react-scripts test --watchAll=false",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iugu/iux-npm.git"
+    "url": "https://github.com/iugu/iux.git"
   },
   "bugs": {
-    "url": "https://github.com/iugu/iux-npm/issues"
+    "url": "https://github.com/iugu/iux/issues"
   },
-  "homepage": "https://github.com/iugu/iux-npm#readme",
+  "homepage": "https://github.com/iugu/iux#readme",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
@@ -27,6 +28,8 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@semantic-release/changelog": "semantic-release/changelog",
+    "@semantic-release/git": "^10.0.1",
     "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.5.0-alpha.64",
     "@storybook/addon-essentials": "^6.5.0-alpha.64",
@@ -65,6 +68,7 @@
     "modern-css-reset": "^1.4.0",
     "prettier": "^2.6.2",
     "react-test-renderer": "^18.0.0",
+    "semantic-release": "^21.0.2",
     "storybook-addon-jsx": "^7.3.14",
     "storybook-tailwind-dark-mode": "^1.0.11",
     "webpack": "^5.72.0",
