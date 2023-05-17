@@ -1,5 +1,5 @@
 import { makeDecorator, useChannel } from "@storybook/addons";
-import { EVENTS } from "./contants";
+import { EVENTS } from "./constants";
 
 
 console.log('with html loading...')

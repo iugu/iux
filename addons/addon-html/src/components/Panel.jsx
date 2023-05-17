@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { useAddonState, useChannel, useParameter } from "@storybook/api";
 import { AddonPanel } from "@storybook/components";
-import { ADDON_ID, EVENTS, PARAM_KEY } from '../contants'
+import { ADDON_ID, EVENTS, PARAM_KEY } from '../constants'
 import { format as prettierFormat } from "prettier/standalone";
 import prettierHtml from "prettier/parser-html";
 import { PanelContent } from "./PanelContent";
