@@ -11,6 +11,9 @@
     "test-storybook": "test-storybook",
     "semantic-release": "semantic-release"
   },
+  "release": {
+    "branches": ["main"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
