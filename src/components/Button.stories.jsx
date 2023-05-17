@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../js/index.js';
+import { Button } from '../js';
 import { expect } from '@storybook/jest';
 import { within, userEvent } from '@storybook/testing-library';
 
