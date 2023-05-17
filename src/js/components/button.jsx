@@ -17,7 +17,6 @@ export const Button = ({ primary, size, label, ...props }) => {
   );
 };
 
-
 Button.propTypes = {
   /**
    * How large should the button be?
