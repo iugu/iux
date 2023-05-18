@@ -6,7 +6,9 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-links',
+    'storybook-dark-mode',
     '../addons/addon-html/src',
+
     {
       name: '@storybook/addon-styling',
       options: {
