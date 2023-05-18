@@ -4,13 +4,13 @@ export default {
   title: 'Components/Panel-OLD',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
-    'Header': { control: 'boolean' },
-    'Footer': { control: 'boolean' },
+    Header: { control: 'boolean' },
+    Footer: { control: 'boolean' },
     'Sub Panel': { control: 'boolean' },
-    'Floating': { control: 'boolean' },
+    Floating: { control: 'boolean' },
     'Baloon Tip': {
       control: { type: 'select' },
-      options: ['Left','Center', 'Right']
+      options: ['Left', 'Center', 'Right'],
     },
   },
 };
@@ -43,7 +43,9 @@ const Template = ({ label, ...args }) => {
     internal = (
       <div class="panel">
         <div>
-          <p>Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <p>
+            Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          </p>
         </div>
       </div>
     );
@@ -60,15 +62,17 @@ const Template = ({ label, ...args }) => {
     }
   }
 
-  var classes = 'panel ' + floating
+  var classes = 'panel ' + floating;
 
   return (
     <div className={classes}>
       {header}
       <div>
-        <p>Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec id massa interdum, venenatis orci eu, consequat est.
-        Cras viverra viverra viverra.</p>
+        <p>
+          Paragraph, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec id massa interdum, venenatis orci eu, consequat est. Cras
+          viverra viverra viverra.
+        </p>
         {internal}
       </div>
       {footer}
@@ -78,36 +82,36 @@ const Template = ({ label, ...args }) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  'Header': false,
-  'Footer': false,
+  Header: false,
+  Footer: false,
   'Sub Panel': false,
-  'Floating': false,
-  'Baloon Tip': 'Center'
+  Floating: false,
+  'Baloon Tip': 'Center',
 };
 
 export const Extended = Template.bind({});
 Extended.args = {
-  'Header': true,
-  'Footer': true,
+  Header: true,
+  Footer: true,
   'Sub Panel': false,
-  'Floating': false,
-  'Baloon Tip': 'Center'
+  Floating: false,
+  'Baloon Tip': 'Center',
 };
 
 export const Internal = Template.bind({});
 Internal.args = {
-  'Header': true,
-  'Footer': true,
+  Header: true,
+  Footer: true,
   'Sub Panel': true,
-  'Floating': false,
-  'Baloon Tip': 'Center'
+  Floating: false,
+  'Baloon Tip': 'Center',
 };
 
 export const Floating = Template.bind({});
 Floating.args = {
-  'Header': false,
-  'Footer': false,
+  Header: false,
+  Footer: false,
   'Sub Panel': true,
-  'Floating': true,
-  'Baloon Tip': 'Center'
+  Floating: true,
+  'Baloon Tip': 'Center',
 };

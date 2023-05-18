@@ -5,13 +5,7 @@ import PropTypes from 'prop-types';
  * Panel. A content wrapper
  */
 export const Panel = ({ wrappedElement, ...props }) => {
-  return (
-    <div
-      className="panel"
-    >
-      {wrappedElement}
-    </div>
-  );
+  return <div className="panel">{wrappedElement}</div>;
 };
 
 Panel.propTypes = {
@@ -19,7 +13,6 @@ Panel.propTypes = {
    * Element to be rendered inside.
    */
   wrappedElement: PropTypes.element,
-}
-
-Panel.defaultProps = {
 };
+
+Panel.defaultProps = {};

@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { styled } from "@storybook/theming";
+import React, { useState } from 'react';
+import { styled } from '@storybook/theming';
 
-import { ActionBar, ScrollArea } from "@storybook/components";
+import { ActionBar, ScrollArea } from '@storybook/components';
 
-import ReactSyntaxHighlighter from "react-syntax-highlighter";
+import ReactSyntaxHighlighter from 'react-syntax-highlighter';
 
 const Pre = styled.pre(({ theme, padded }) => ({
-  display: "flex !important",
-  justifyContent: "flex-start",
+  display: 'flex !important',
+  justifyContent: 'flex-start',
   margin: 0,
   padding: padded ? `${theme.layoutMargin}px !important` : 0,
-  tabSize: "2",
+  tabSize: '2',
 }));
 
 const Code = styled.code`
@@ -35,7 +35,7 @@ const Code = styled.code`
 `;
 
 export default function SyntaxHighlighter({
-  language = "jsx",
+  language = 'jsx',
   copyable = false,
   bordered = false,
   padded = false,
@@ -69,7 +69,7 @@ export default function SyntaxHighlighter({
           CodeTag={Code}
           showLineNumbers={showLineNumbers}
           wrapLines={wrapLines}
-          lineProps={{ className: "code-line" }}
+          lineProps={{ className: 'code-line' }}
           {...rest}
         >
           {children.trim()}
@@ -77,7 +77,7 @@ export default function SyntaxHighlighter({
       </ScrollArea>
       {copyable && (
         <ActionBar
-          actionItems={[{ title: copied ? "Copied" : "Copy", onClick }]}
+          actionItems={[{ title: copied ? 'Copied' : 'Copy', onClick }]}
         />
       )}
     </>

@@ -1,10 +1,9 @@
-
 import '../src/css/tailwind.css';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
-  matchers: {
+    matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
@@ -21,7 +20,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Core',['Overview', 'Colours','Layout',],'Components'],
+      order: ['Core', ['Overview', 'Colours', 'Layout'], 'Components'],
     },
   },
-}
+};

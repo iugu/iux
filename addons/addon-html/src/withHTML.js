@@ -1,32 +1,31 @@
-import { makeDecorator, useChannel } from "@storybook/addons";
-import { EVENTS } from "./constants";
+import { makeDecorator, useChannel } from '@storybook/addons';
+import { EVENTS } from './constants';
 
-
-console.log('with html loading...')
+console.log('with html loading...');
 
 export const withHTML = makeDecorator({
-  name: "withHTML",
-  parameterName: "html",
+  name: 'withHTML',
+  parameterName: 'html',
   skipIfNoParametersOrOptions: false,
   wrapper: (storyFn, context, { parameters = {} }) => {
     const emit = useChannel({});
     setTimeout(() => {
-      const rootSelector = parameters.root || "#storybook-root, #root";
+      const rootSelector = parameters.root || '#storybook-root, #root';
       const root = document.querySelector(rootSelector);
       let code = root ? root.innerHTML : `${rootSelector} not found.`;
-      console.log(code)
+      console.log(code);
       const { removeEmptyComments, removeComments, transform } = parameters;
       if (removeEmptyComments) {
-        code = code.replace(/<!--\s*-->/g, "");
+        code = code.replace(/<!--\s*-->/g, '');
       }
       if (removeComments === true) {
-        code = code.replace(/<!--[\S\s]*?-->/g, "");
+        code = code.replace(/<!--[\S\s]*?-->/g, '');
       } else if (removeComments instanceof RegExp) {
         code = code.replace(/<!--([\S\s]*?)-->/g, (match, p1) =>
-          removeComments.test(p1) ? "" : match,
+          removeComments.test(p1) ? '' : match
         );
       }
-      if (typeof transform === "function") {
+      if (typeof transform === 'function') {
         try {
           code = transform(code);
         } catch (e) {

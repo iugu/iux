@@ -4,7 +4,8 @@ export default create({
   base: 'light',
   brandTitle: 'iugu UX',
   brandUrl: '',
-  brandImage: 'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
+  brandImage:
+    'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
   brandTarget: '_self',
 
   // UI
@@ -28,6 +29,5 @@ export default create({
   inputBg: '#FFFFFF',
   inputBorder: '#CBCBCA',
   inputTextColor: '#333',
-  inputBorderRadius: 4
-
+  inputBorderRadius: 4,
 });

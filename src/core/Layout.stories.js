@@ -1,11 +1,10 @@
 export default {
   title: 'Core/Layout',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
-  argTypes: {
-  },
+  argTypes: {},
   parameters: {
-    layout: 'centered'
-  }
+    layout: 'centered',
+  },
 };
 
 const TemplateSimple = ({ label, ...args }) => {
@@ -22,7 +21,7 @@ const TemplateSimple = ({ label, ...args }) => {
       </div>
     </div>
 `;
-}
+};
 
 const TemplateCenter = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
@@ -40,7 +39,7 @@ const TemplateCenter = ({ label, ...args }) => {
       </div>
     </div>
 `;
-}
+};
 
 const TemplateSidebar = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
@@ -63,7 +62,7 @@ const TemplateSidebar = ({ label, ...args }) => {
       </div>
     </div>
 `;
-}
+};
 
 const TemplateComplex = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
@@ -95,23 +94,24 @@ const TemplateComplex = ({ label, ...args }) => {
       </div>
     </div>
 `;
-}
+};
 
 export const Simple = TemplateSimple.bind({});
-Simple.args = {
-};
+Simple.args = {};
 
 export const Centered = TemplateCenter.bind({});
-Centered.args = {
-};
+Centered.args = {};
 
 export const WithSidebar = TemplateSidebar.bind({});
-WithSidebar.args = {
-};
+WithSidebar.args = {};
 
 export const Complex = TemplateComplex.bind({});
-Complex.args = {
-};
+Complex.args = {};
 
 // eslint-disable-next-line no-underscore-dangle
-export const __namedExportsOrder = ['Simple', 'Centered', 'WithSidebar', 'Complex'];
+export const __namedExportsOrder = [
+  'Simple',
+  'Centered',
+  'WithSidebar',
+  'Complex',
+];

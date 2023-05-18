@@ -5,7 +5,7 @@ import { within, userEvent } from '@storybook/testing-library';
 
 export default {
   title: 'Components/Button',
-  component: Button
+  component: Button,
 };
 
 // return <Button label="Default Button" />;
@@ -15,7 +15,7 @@ const Template = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   label: 'Default Button',
-  ...Button.defaultProps
+  ...Button.defaultProps,
 };
 Default.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement);

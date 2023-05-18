@@ -1,2 +1,2 @@
-import { withHTML } from "./withHTML";
+import { withHTML } from './withHTML';
 export const decorators = [withHTML];
