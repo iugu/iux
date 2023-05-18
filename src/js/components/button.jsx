@@ -9,7 +9,7 @@ export const Button = ({ primary, size, label, ...props }) => {
   return (
     <button
       type="button" role="button"
-      className={`bg-sky-500 p-4`}
+      className={`bg-sky-500 px-4 py-2 rounded-md text-white`}
       {...props}
     >
       {label}
