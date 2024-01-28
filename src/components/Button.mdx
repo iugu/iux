@@ -1,0 +1,30 @@
+import { Canvas, Meta, Primary, Controls, Subtitle, Story, ArgTypes, Description } from '@storybook/blocks';
+//import * as ButtonStories from './Button.stories';
+
+import * as ButtonStories from './Button.stories';
+
+# Button
+
+<Meta of={ButtonStories} />
+
+<Subtitle>Displays an image that represents a user or organization</Subtitle>
+
+A button is ...
+
+<Primary />
+
+<Canvas>
+  <Story of={ButtonStories.Default} />
+</Canvas>
+
+## Props
+
+<ArgTypes of={ButtonStories} />
+
+<Controls />
+
+## Stories
+
+### Primary
+
+A button can be of primary importance.
