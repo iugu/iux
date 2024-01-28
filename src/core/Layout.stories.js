@@ -108,6 +108,7 @@ WithSidebar.args = {};
 export const Complex = TemplateComplex.bind({});
 Complex.args = {};
 
+/*
 // eslint-disable-next-line no-underscore-dangle
 export const __namedExportsOrder = [
   'Simple',
@@ -115,3 +116,4 @@ export const __namedExportsOrder = [
   'WithSidebar',
   'Complex',
 ];
+*/

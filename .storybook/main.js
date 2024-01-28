@@ -8,13 +8,13 @@ const config = {
     '@storybook/addon-links',
     'storybook-dark-mode',
     '../addons/addon-html/src',
-
     {
       name: '@storybook/addon-styling',
       options: {
         postCss: true,
       },
     },
+    '@storybook/addon-mdx-gfm'
   ],
   framework: {
     name: '@storybook/react-webpack5',

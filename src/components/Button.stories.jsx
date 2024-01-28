@@ -5,7 +5,7 @@ import { within, userEvent } from '@storybook/testing-library';
 
 export default {
   title: 'Components/Button',
-  component: Button,
+  component: Button
 };
 
 // return <Button label="Default Button" />;
