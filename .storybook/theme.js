@@ -5,7 +5,7 @@ export default create({
   brandTitle: 'iugu UX',
   brandUrl: '',
   brandImage:
-    'https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/desativado-1617737004-logo-iugu-4-devs-novopng.png',
+    '/assets/logo-iux.png',
   brandTarget: '_self',
 
   // UI
